@@ -1,1 +1,73 @@
+Build a full-stack, responsive e-commerce and B2B sourcing agency website for "[YOUR BRAND NAME]" (use a clean placeholder brand logo/name for now). The business operates as a Vietnam-to-Laos Clothing Sourcing Agency combined with a Wholesale & Retail Online Clothing Store.
 
+### 1. Visual Design & UI/UX Style
+- **Theme & Color Palette:** Inspired by the **Lazada** e-commerce app aesthetic — clean white and light-gray backgrounds (`#F5F5F5`) paired with vibrant Lazada-style orange (`#F57224`) and deep navy/indigo (`#0F146D`) accents for primary CTAs, badges, and price highlights.
+- **Mobile-First & Responsive:** Must look and function smoothly on both mobile screens (like an app) and desktop browsers, with sticky bottom/top CTAs and clear product grids.
+
+### 2. Prominent 4-Language Switcher Box (Lao, Thai, English, Vietnamese)
+- **Dedicated Language Switcher UI:** Place a clearly visible, easy-to-tap **Language Switcher box/selector** in the top header bar (visible on both desktop and mobile without being hidden inside a hamburger menu), as well as in the footer.
+- **Supported Languages (4 Options):**
+  1. **ລາວ (Lao)** — Default language when opening the site
+  2. **ไทย (Thai)**
+  3. **English (EN)**
+  4. **Tiếng Việt (Vietnamese)**
+- **Full Real-Time Translation:** Provide a complete, built-in translation dictionary (`i18n`) for all 4 languages so that clicking any option in the language switcher box immediately translates every headline, menu item, agency package description, product title, tiered pricing label, shipping rate note, parcel tracking status, cart drawer, and WhatsApp checkout message.
+
+### 3. Currency Display Rules (Strict Separation — Do NOT auto-convert)
+- Keep each currency distinct according to its specific service/item:
+  - **Agency Packages:** Displayed in **THB (บาท)**
+  - **Clothing Products:** Displayed in **LAK (ກີບ)** per piece
+  - **Cross-Border Shipping Rate:** Displayed in **VND (₫)** with a clear note that *actual payment is settled in Lao Kip (LAK)* at the daily exchange rate.
+
+### 4. Core Website Sections & Features
+
+#### A. Top Navigation & Hero Banner
+- Top bar featuring: Brand logo, search bar for clothing products, **prominent 4-language switcher box (ລາວ | ไทย | EN | VN)**, quick jump link to **Order & Parcel Tracking**, shopping cart drawer icon with item counter, and direct WhatsApp button.
+- Hero banner highlighting both core pillars: **"Direct Clothing Sourcing from Vietnam to Laos"** + **"Shop Ready-to-Ship Wholesale & Retail Fashion."**
+
+#### B. Section 1: Vietnam Clothing Sourcing Agency (3 Service Packages)
+Display 3 clean, high-converting pricing cards with clear inclusions and exclusions:
+- **Package 1: Vietnam Wholesale Clothing Market Tour — 6,900 THB**
+  - *Details:* Guided tour of top wholesale & budget clothing markets in Vietnam.
+  - *Included:* Professional local interpreter/translator included at no extra cost.
+  - *Excluded:* Does NOT include accommodation/hotel or flight tickets.
+- **Package 2: Direct Supplier Contact List (15 Wholesale Shops) — 6,900 THB**
+  - *Details:* Instant access to 15 vetted, direct wholesale clothing suppliers in Vietnam (no need to travel to Vietnam).
+  - *Included:* Direct contact details + initial translation/coordination support.
+- **Package 3: Full-Service Clothing Factory & OEM Brand Creation Tour — 16,900 THB**
+  - *Details:* Guided visit to end-to-end garment manufacturing factories in Vietnam to produce and launch your own clothing brand.
+  - *Included:* Professional interpreter/translator included at no extra cost.
+  - *Excluded:* Does NOT include accommodation/hotel or flight tickets.
+- **CTA on each card:** "Book via WhatsApp" button that opens WhatsApp with a pre-filled message in the currently selected language, specifying the package name and price in THB.
+
+#### C. Section 2: Wholesale & Retail Clothing Catalog (E-Commerce Store)
+- Product grid with category filters (e.g., All, Men, Women, Streetwear, Best Sellers).
+- **Tiered Pricing System on Every Product Card & Detail Modal:**
+  - Clearly display **Retail Price** (1–2 pcs) and **Wholesale Tier Prices** (**3+ pcs**, **5+ pcs**, **10+ pcs** with progressively lower unit prices in LAK).
+  - Real-time quantity selector and price calculator on each product card/cart that automatically switches to the wholesale unit price when a customer selects 3, 5, or 10+ pieces.
+- **Cart & WhatsApp Checkout Flow:**
+  - Customers can add multiple clothing items and quantities to a cart.
+  - Clicking "Order via WhatsApp" generates a clean, itemized order summary (in the user's selected language) listing product names, quantities, applied retail/wholesale unit prices in LAK, product subtotal in LAK, and a note: *"+ Separate Vietnam–Laos shipping fee calculated by weight"* and redirects to `https://wa.me/[YOUR_WHATSAPP_NUMBER]` with the text pre-filled.
+
+#### D. Section 3: Vietnam-to-Laos Cross-Border Shipping Rate & Estimator
+- Dedicated shipping info card explaining that **shipping is billed separately from product prices** based on parcel weight and item quantity.
+- **Base Rate Display:** Clearly highlight the standard tier: **Under 50 kg = 500,000 VND** (with a clear badge/note: *"Quoted in VND — Payable in Lao Kip (LAK)"*).
+- Include an interactive **Shipping Estimator** where users can enter estimated weight (kg) or garment count to check the estimated shipping tier in VND before chatting on WhatsApp.
+
+#### E. Section 4: Order & Parcel Tracking (Vietnam to Laos)
+- Include a dedicated **Order & Parcel Tracking** section/module where customers can enter a Tracking ID / Order Code (e.g., `VNLA-1001`, `VNLA-1002`, `VNLA-1003`) to view shipment progress.
+- Display a clear visual step-by-step shipment timeline (translated into all 4 languages), such as:
+  1. **Order Confirmed & Sourced in Vietnam**
+  2. **Packed & Weighed for Cross-Border Transit**
+  3. **In Transit (Vietnam to Laos)**
+  4. **Arrived at Hub / Ready for Delivery in Laos**
+- Show key shipment details: Tracking ID, origin/destination route (Vietnam → Laos), weight/parcel summary, estimated shipping rate reference in VND (payable in LAK), and a "Track on WhatsApp" button if a user needs direct help.
+- Pre-populate 3 realistic sample tracking records so the tracking lookup can be tested immediately.
+
+#### F. Floating WhatsApp Button & Footer
+- Sticky floating WhatsApp button at the bottom-right corner across all pages for instant inquiries.
+- Clean footer with quick links to Packages, Clothing Catalog, Shipping Terms, Order Tracking, and a duplicate 4-language selector box.
+
+### 5. Technical & Content Quality
+- Populate the clothing catalog with 6–8 realistic sample fashion items (with placeholder fashion product images, tiered pricing for 1–2 pcs, 3+ pcs, 5+ pcs, and 10+ pcs) so the store is immediately testable.
+- Ensure all interactive elements (4-language switcher box, quantity tier pricing, cart summary, shipping estimator, parcel tracking lookup, and WhatsApp pre-filled links) work seamlessly out of the box. (Admin dashboard can be added later in a separate phase.)
